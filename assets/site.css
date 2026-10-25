@@ -62,3 +62,6 @@ h2{font:400 clamp(38px,5vw,60px)/1 'Instrument Serif',serif;margin:0 0 10px;colo
 .note{background:#fff;border-radius:20px;padding:16px 20px;box-shadow:0 5px 0 #e4ddcc}
 footer{background:var(--night);color:#a9cdc6;padding:30px 0;font-size:15px;margin-top:40px}footer a{color:#fff}
 @media(max-width:860px){.hero,.panel{grid-template-columns:1fr}.duo{height:470px}.duo .phone,.pair .phone{width:200px}.panel{padding:30px 22px}.nav a.l{margin-left:14px}}
+.panel.plot{background:linear-gradient(135deg,#f3ead2,#e6d3a6);box-shadow:0 12px 0 #c9b27a;color:#26304f}
+.panel.plot h3{font-family:'Instrument Serif',serif}
+.panel.mist{background:linear-gradient(135deg,#dbe6ee,#f3dccb);box-shadow:0 12px 0 #b9c4cf}
