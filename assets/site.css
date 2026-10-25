@@ -65,3 +65,17 @@ footer{background:var(--night);color:#a9cdc6;padding:30px 0;font-size:15px;margi
 .panel.plot{background:linear-gradient(135deg,#f3ead2,#e6d3a6);box-shadow:0 12px 0 #c9b27a;color:#26304f}
 .panel.plot h3{font-family:'Instrument Serif',serif}
 .panel.mist{background:linear-gradient(135deg,#dbe6ee,#f3dccb);box-shadow:0 12px 0 #b9c4cf}
+/* constant header and footer: always visible while content scrolls */
+body{padding-top:68px}
+header.bar{position:fixed;top:0;left:0;right:0;z-index:100;background:linear-gradient(180deg,#0e3b44,#134a52);box-shadow:0 4px 18px rgba(14,59,68,.35)}
+header.bar .nav{padding-top:12px;padding-bottom:12px}
+header.bar .brand{color:#fff}
+header.bar .nav a.l{color:#d8efe8}header.bar .nav a.l:hover{color:#fff}
+header.bar .nav a.ei{color:#ffb089;border:1.5px solid rgba(255,176,137,.5);border-radius:999px;padding:5px 12px;font-size:14px}
+header.bar .nav a.ei:hover{background:rgba(255,176,137,.15);color:#ffd0b8}
+.sky{margin-top:-68px;padding-top:68px}
+footer{position:sticky;bottom:0;z-index:90;margin-top:40px;box-shadow:0 -4px 18px rgba(14,59,68,.3)}
+footer .home{font-weight:700}
+@media(max-width:600px){header.bar .nav a.l{margin-left:10px;font-size:14px}header.bar .brand{font-size:28px}header.bar .nav a.ei{padding:4px 9px;font-size:12px}}
+header.bar .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+header.bar nav{display:flex;align-items:center;flex-wrap:nowrap;white-space:nowrap}
